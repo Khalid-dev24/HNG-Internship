@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profile Card — Frontend Wizards Stage 0</title>
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+  <main>
+    <article class="profile-card" data-testid="test-profile-card" aria-labelledby="profile-name">
+      <header class="profile-header">
+        <figure class="avatar-figure" aria-hidden="false">
+          <img
+            src="./assets/khalid-img.jpg"
+            alt="Profile avatar"
+            data-testid="test-user-avatar"
+            id="avatarImage"
+            width="160"
+            height="160"
+          />
+          <figcaption class="visually-hidden">User avatar</figcaption>
+        </figure>
+
+        <div class="header-meta">
+          <h2 id="profile-name" data-testid="test-user-name">Khalid Misbaudeen</h2>
+          <p class="time" aria-live="polite">
+            <span data-testid="test-user-time">0</span>
+            <span class="time-label visually-hidden">milliseconds (Date.now)</span>
+          </p>
+        </div>
+      </header>
+
+      <section class="bio" aria-label="Biography">
+        <p data-testid="test-user-bio">
+          I'm a frontend developer who loves building accessible interfaces and learning new tools.
+        </p>
+      </section>
+
+      <nav class="social" aria-label="Social links" data-testid="test-user-social-links">
+            <ul>
+                <li><a href="https://github.com/Khalid-dev24" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/khalid-misbaudeen/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+            </ul>
+      </nav>
+
+      <section class="lists">
+            <section class="hobbies" aria-label="Hobbies" data-testid="test-user-hobbies">
+                <h3>Hobbies</h3>
+                <ul>
+                    <li data-testid="test-user-hobby-1">Reading</li>
+                    <li data-testid="test-user-hobby-2">Coding</li>
+                    <li data-testid="test-user-hobby-3">Football</li>
+                </ul>
+            </section>
+
+            <section class="dislikes" aria-label="Dislikes" data-testid="test-user-dislikes">
+                <h3>Dislikes</h3>
+                <ul>
+                    <li data-testid="test-user-dislike-1">Noise</li>
+                    <li data-testid="test-user-dislike-2">Procrastination</li>
+                </ul>
+            </section>
+      </section>
+
+      <section class="controls" aria-label="Profile controls">
+        <label for="avatarUrl" class="sr-label">Avatar image URL</label>
+        <input id="avatarUrl" type="url" placeholder="Paste image URL and press Enter" data-testid="test-avatar-url-input" />
+
+        <label for="avatarUpload" class="sr-label">Upload avatar image</label>
+        <input id="avatarUpload" type="file" accept="image/*" data-testid="test-avatar-file-input" />
+
+        <label for="nameInput" class="sr-label">Name</label>
+        <input id="nameInput" type="text" placeholder="Your name" data-testid="test-name-input" />
+
+        <label for="bioInput" class="sr-label">Bio</label>
+        <textarea id="bioInput" rows="3" placeholder="Short bio" data-testid="test-bio-input"></textarea>
+
+        <button id="applyBtn" data-testid="test-apply-button">Apply</button>
+      </section>
+    </article>
+  </main>
+
+  <script src="profile.js" defer></script>
+</body>
+</html>
