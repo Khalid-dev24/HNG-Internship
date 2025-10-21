@@ -7,7 +7,17 @@
   <link rel="stylesheet" href="profile.css" />
 </head>
 <body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
   <main>
+   
+
     <article class="profile-card" data-testid="test-profile-card" aria-labelledby="profile-name">
       <header class="profile-header">
         <figure class="avatar-figure" aria-hidden="false">
@@ -26,7 +36,7 @@
           <h2 id="profile-name" data-testid="test-user-name">Khalid Misbaudeen</h2>
           <p class="time" aria-live="polite">
             <span data-testid="test-user-time">0</span>
-            <span class="time-label visually-hidden">milliseconds (Date.now)</span>
+            <!-- <span class="time-label visually-hidden">milliseconds (Date.now)</span> -->
           </p>
         </div>
       </header>
@@ -48,17 +58,17 @@
             <section class="hobbies" aria-label="Hobbies" data-testid="test-user-hobbies">
                 <h3>Hobbies</h3>
                 <ul>
-                    <li data-testid="test-user-hobby-1">Reading</li>
-                    <li data-testid="test-user-hobby-2">Coding</li>
-                    <li data-testid="test-user-hobby-3">Football</li>
+                    <li data-testid="test-user-hobby-1">- Reading</li>
+                    <li data-testid="test-user-hobby-2">- Coding</li>
+                    <li data-testid="test-user-hobby-3">- Football</li>
                 </ul>
             </section>
 
             <section class="dislikes" aria-label="Dislikes" data-testid="test-user-dislikes">
                 <h3>Dislikes</h3>
                 <ul>
-                    <li data-testid="test-user-dislike-1">Noise</li>
-                    <li data-testid="test-user-dislike-2">Procrastination</li>
+                    <li data-testid="test-user-dislike-1">- Noise</li>
+                    <li data-testid="test-user-dislike-2">- Procrastination</li>
                 </ul>
             </section>
       </section>
