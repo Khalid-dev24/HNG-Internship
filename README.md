@@ -5,8 +5,8 @@ It follows the Stage 0 requirements and includes required `data-testid` attribut
 
 ## Files
 - `index.html`
-- `styles.css`
-- `script.js`
+- `profile.css`
+- `profile.js`
 
 ## How to run locally
 Open `index.html` in your browser.
